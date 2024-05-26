@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        font-family: GaramondPremrPro-MedItCapt, 'Garamond Premier Pro';
+        font-size: 187.4px;
+        font-style: italic;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g class="cls-3">
+    <text class="cls-2" transform="translate(349.4 426)"><tspan x="0" y="0">scroll</tspan></text>
+  </g>
+  <g>
+    <line class="cls-1" x1="540" y1="507.8" x2="540" y2="851.4"/>
+    <path class="cls-4" d="M540,911.7c-10.5-28.4-28.5-63.6-47.6-85.5l47.6,17.2,47.5-17.2c-19,21.8-37,57.1-47.5,85.5Z"/>
+  </g>
+</svg>

@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Double the viewport height to allow scrolling */
+    background-color: #000; /* Black background */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+/* Hide the scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Adjust scrollbar width for Firefox */
+body {
+    scrollbar-width: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 90% of the smaller dimension (viewport width or height) */
+    height: 100%; /* Keeps the container square */
+    overflow: hidden;
+    position: fixed; /* Use fixed positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+}
+
+
+.framed-image {
+    transition: transform 0.1s ease;
+    position:absolute;
+}
+
+.start {
+    width: 50%; /* Adjust the width percentage for the green box */
+    height: 50%; /* Adjust the height percentage for the green box */
+    z-index: 8;
+}
+
+.pink {
+    width: 50%; /* Adjust the width percentage for the green box */
+    height: 50%; /* Adjust the height percentage for the green box */
+    z-index: 7;
+}
+
+.green{
+    width: 20%; /* Adjust the width percentage for the pink box */
+    height: 20%; /* Adjust the height percentage for the pink box */
+    z-index: 6;
+}
+
+.orange {
+    width: 8%; /* Adjust the width percentage for the blue box */
+    height: 8%; /* Adjust the height percentage for the blue box */
+    z-index: 5
+}
+
+.blue {
+    width: 3.2%; /* Adjust the width percentage for the blue box */
+    height: 3.2%; /* Adjust the height percentage for the blue box */
+    z-index: 4;
+}
+
+.purple {
+    width: 1.28%; /* Adjust the width percentage for the blue box */
+    height: 1.28%; /* Adjust the height percentage for the blue box */
+    z-index: 3
+}
+
+.magenta {
+        width: 0.512%; /* Adjust the width percentage for the blue box */
+        height: 0.512%; /* Adjust the height percentage for the blue box */
+        z-index: 2;
+}
+
+.end {
+    width: 0.2048%; /* Adjust the width percentage for the blue box */
+    height: 0.2048%; /* Adjust the height percentage for the blue box */
+    z-index: 1
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+/* Define keyframes for color animation */
+@keyframes colorChange {
+    0% { background-color: #1500ff; } /* Red */
+    33.33% { background-color: #00f2ff; } /* Yellow */
+    66.66% { background-color: #FFFFFF; } /* White */
+    100% { background-color: #FF0000; } /* Red */
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    animation: colorChange 3s infinite alternate; /* Apply color animation */
+}
+
+/* Generate random positions for stars */
+.star:nth-child(1) {
+    top: 10%;
+    left: 20%;
+}
+.star:nth-child(2) {
+    top: 50%;
+    left: 80%;
+}
+/* Add more star positions as desired */
+
