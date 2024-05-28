@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Tunnel Experiment</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Scrolling Tunnel Experiment">
+    <meta property="og:description" content="Event Listeners for Scrolling and SVGs">
+    <meta property="og:image" content="scrolling-tunnel-experiment-thumbnail.jpg">
+    <meta name="twitter:title" content="Scrolling Tunnel Experiment">
+    <meta name="twitter:description" content="Event Listeners for Scrolling and SVGs!">
+    <meta name="twitter:image" content="scrolling-tunnel-experiment-thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="container scrollable-container">
+        <img src="box-start.svg" class="framed-image start" id="origin" alt="3D Tunnel">
+        <img src="box1.svg" class="framed-image box1" id="box1" alt="3D Tunnel">
+        <img src="box2.svg" class="framed-image box2" id="box2" alt="3D Tunnel">
+        <img src="box3.svg" class="framed-image box3" id="box3" alt="3D Tunnel">
+        <img src="box4.svg" class="framed-image box4" id="box4" alt="3D Tunnel">
+        <img src="box5.svg" class="framed-image box5" id="box5" alt="3D Tunnel">
+        <img src="box6.svg" class="framed-image box6" id="box6" alt="3D Tunnel">
+        <img src="box-end.svg" class="framed-image end" id="hello" alt="3D Tunnel">
+    </div>
+    <div class="audio-control">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="10%" height="10%" id="audio-toggle">
+            <!-- Circle -->
+            <circle cx="50" cy="50" r="45" fill="none" stroke="white" />
+
+            <!-- Quarter note -->
+            <path
+                d="M50 15v52c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10h5c0 8.5-6.5 15-15 15s-15-6.5-15-15 6.5-15 15-15V15c0-2.2 1.8-4 4-4s4 1.8 4 4zm-5 62c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4z"
+                fill="white" />
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="audio-play.js"></script>
+    <script src="stars.js"></script>
+</body>
+
+</html>

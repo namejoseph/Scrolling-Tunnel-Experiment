@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame Test</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            /* Prevents scrolling on the main document */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            overflow: auto;
+            /* Allows scrolling within the iframe */
+            -webkit-overflow-scrolling: touch;
+            /* Enables smooth scrolling on iOS */
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="experiment.html"></iframe>
+</body>
+
+</html>
