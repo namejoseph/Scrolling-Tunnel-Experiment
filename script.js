@@ -39,6 +39,10 @@ function handleScroll(event) {
         boxRatios = initBoxStart;
     }
 
+    if (boxRatios > 40000) {
+        boxRatios = 40000;
+    }
+
     // Set the new width to the element
     document.getElementById('origin').style.width = boxRatios + "%";
     document.getElementById('origin').style.opacity = mapOpacity(boxRatios);
